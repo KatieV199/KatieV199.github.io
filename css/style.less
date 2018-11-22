@@ -280,6 +280,13 @@ input, textarea {
 
 .recipe_page {
   .main-left-side {
+    font-size: 0;
+    .category-in {
+      border-top-right-radius: 5px;
+      border-top-left-radius: 0;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
     .main-left-side-list {
       display: none;
       &.active {
@@ -289,7 +296,7 @@ input, textarea {
       border-radius: 5px;
       background: #807a7a;
       opacity: 0.75;
-      padding: 5px;
+      padding: 5px 5px 0 0;
       @media(max-width:720px) {
         margin-top: 10px;
       }
@@ -306,7 +313,7 @@ input, textarea {
   }
 
   .content {
-    margin-top: 50px;
+    background-color: #dea47b;
     margin-bottom: 50px;
     .right, .left {
       display: inline-block;
@@ -323,7 +330,6 @@ input, textarea {
     .right {
       margin-top: 20px;
       .name-title {
-        background: #fff;
         display: inline-block;
         padding: 20px 30px;
         position: relative;
