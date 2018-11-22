@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.header_top {
+    padding-top: 40px;
+    position: relative;
+    padding-bottom: 170px;
+}
+
+menu,
+.title,
+.search {
+    display: inline-block;
+}
+
+menu {
+    width: 20%;
+    padding-left: 0;
+    margin: 0;
+}
+
+menu ul li {
+    display: inline-block;
+    padding-right: 35px;
+}
+
+menu button {
+    background-color: transparent;
+    border: none;
+}
+
+.header_top:after {
+    content: '';
+    position: absolute;
+    background-image: url(img/Rectangle_3.png);
+    width: 769px;
+    height: 720px;
+    right: -100px;
+    top: 0;
+}
+
+.title {
+    width: 40%;
+    text-align: center;
+}
+
+.search {
+    width: 39%;
+    text-align: right;
+}
+
+.search img {
+    position: relative;
+    z-index: 1;
+}

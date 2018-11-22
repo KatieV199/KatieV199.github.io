@@ -1,0 +1,17 @@
+@media(min-width: 320px) {
+    .main-bg .main-block {
+        width: 100%;
+    }
+}
+
+@media(min-width: 780px) {
+    .main-bg .main-block {
+        width: 370px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .main-bg .main-block {
+        width: 370px;
+    }
+}
