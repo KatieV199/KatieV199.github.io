@@ -286,6 +286,7 @@ input, textarea {
       border-top-left-radius: 0;
       border-bottom-right-radius: 0;
       border-bottom-left-radius: 0;
+      box-shadow: 3px 5px 5px 0px #0000007a;
     }
     .main-left-side-list {
       display: none;
@@ -303,8 +304,19 @@ input, textarea {
           display: inline-block;
           padding: 7px 15px 0;
           border-top-right-radius: 5px;
+          box-shadow: 4px 0px 5px 0px #0000007a;
+          position: relative;
           &:nth-child(1) {
-            background-color: #000;
+            background-color: #389b4e;
+            z-index: 9;
+          }
+          &:nth-child(2) {
+            background: #cfc357;
+            z-index: 8;
+          }
+          &:nth-child(3){
+            background: #b21e1e;
+            z-index: 7;
           }
           a {
            font-size: 16px;
