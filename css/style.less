@@ -279,6 +279,9 @@ input, textarea {
 }
 
 .recipe_page {
+  &.desserts {
+    background: #f7e0d0;
+  }
   .main-left-side {
     font-size: 0;
     .category-in {
@@ -336,7 +339,7 @@ input, textarea {
 
   .content {
     background-color: #dea47b;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     .right, .left {
       display: inline-block;
       width: 45%;
@@ -349,13 +352,33 @@ input, textarea {
         padding-right: 15px;
       }
     }
+    .left {
+      height: 1000px;
+      .plate-img {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 90%;
+        height: 60%;
+        background-image: url(https://images.unsplash.com/photo-1534353875273-b5887cc1abf5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f19b3587a3ced9fadd1abd4716e81212&auto=format&fit=crop&w=500&q=60);
+        &.chocolate-cake-img {
+          background-image: url(https://images.unsplash.com/photo-1541783245831-57d6fb0926d3?ixlib=rb-0.3.5&s=560f65b8713fc4800570870fb1b84869&auto=format&fit=crop&w=634&q=80);
+          transition: 0.5s;
+        }
+        &.honey-cake-img {
+          background-image: url(https://media.fromthegrapevine.com/assets/images/2015/1/sweethoneycake.jpg.839x0_q71_crop-scale.jpg);
+          transition: 0.5s;
+        }
+        &.carrot-cake-img {
+          background-image: url(https://images.unsplash.com/photo-1501437638401-4addcfd56d3d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=54094e10aa2b8b133bda0f29847b65f8&auto=format&fit=crop&w=633&q=80);
+          transition: 0.5s;
+        }
+      }
+    }
     .right {
       margin-top: 20px;
       .name-title {
         display: inline-block;
-        padding: 20px 30px;
-        position: relative;
-        left: -50px;
+        padding: 20px 30px 20px 0;
         @media (max-width:600px) {
           left: 0;
           padding: 0;
@@ -378,6 +401,7 @@ input, textarea {
           }
         }
       }
+    }
       button {
         font-size: 15px;
       }
@@ -404,6 +428,7 @@ input, textarea {
           border-radius: 3px;
           padding: 10px 20px;
           width: 100%;
+          background: #f1c19f;
           &::placeholder {
            font-weight: 600;
            color: #000;
@@ -417,4 +442,3 @@ input, textarea {
       }
     }
   }
-}

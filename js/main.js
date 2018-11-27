@@ -14,9 +14,26 @@ jQuery(document).ready(function() {
 
     });
 
+
     jQuery("#add-btn").click(function() {
         jQuery(".add-form").slideToggle(300);
 
     });
+
+    $(".chocolate-cake").hover(
+        function() {
+            $(".plate-img").toggleClass("chocolate-cake-img");
+        }
+    );
+    $(".honey-cake").hover(
+        function() {
+            $(".plate-img").toggleClass("honey-cake-img");
+        }
+    );
+    $(".carrot-cake").hover(
+        function() {
+            $(".plate-img").toggleClass("carrot-cake-img");
+        }
+    );
 
 });
