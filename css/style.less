@@ -355,11 +355,12 @@ input, textarea {
     .left {
       height: 1000px;
       .plate-img {
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 90%;
-        height: 60%;
-        background-image: url(https://images.unsplash.com/photo-1534353875273-b5887cc1abf5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f19b3587a3ced9fadd1abd4716e81212&auto=format&fit=crop&w=500&q=60);
+        background-size: cover;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 60%;
+    background-image: url(https://images.unsplash.com/photo-1534353875273-b5887cc1abf5?ixlib=rb-0.3.5…jEyMDd9&s=f19b358…&auto=format&fit=crop&w=500&q=60);
+    background-position: center;
         &.chocolate-cake-img {
           background-image: url(https://images.unsplash.com/photo-1541783245831-57d6fb0926d3?ixlib=rb-0.3.5&s=560f65b8713fc4800570870fb1b84869&auto=format&fit=crop&w=634&q=80);
           transition: 0.5s;
@@ -437,6 +438,55 @@ input, textarea {
           &.ingredients {
            width: 70%;
            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+
+
+    &.dessert-item {
+      color: #000;
+      .top {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+      }
+      .bottom {
+        margin-top: 50px;
+        h1 {
+          text-align: center;
+          font-size: 36px;
+        }
+        .steps {
+          margin-top: 30px;
+          .steps-top {
+            display: flex;
+            align-content: center;
+            justify-content: space-between; 
+            .left, .right {
+              width: 50%;
+              height: auto;
+              padding: 15px;
+              h2 {
+                font-size: 28px;
+                padding-bottom: 20px;
+              }
+            }
+            .left ul {
+              padding-left: 20px;
+              list-style: circle;
+            }
+          }
+          .steps-bottom {
+            padding: 50px 15px;
+            width: 70%;
+            h2 {
+              font-size: 28px;
+              padding-bottom: 20px;
+            }
+            p {
+              line-height: 18px;
+            }
           }
         }
       }
